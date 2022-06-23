@@ -30,7 +30,7 @@ ul li:hover{
 }
 
 .header {
-	background: url(/img/header-bg.jpg) no-repeat center top;
+	background: url(../img/header.jpg) no-repeat center top;
 	padding-top: 57px;
 	padding-bottom: 200px;
 }
