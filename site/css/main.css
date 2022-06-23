@@ -1,0 +1,172 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Anton', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+h1, h2 , h3, h4 , h5 , h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+ul , li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+ul li:hover{
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto; /*center*/
+}
+
+.header {
+	background: url(/img/header-bg.jpg) no-repeat center top;
+	padding-top: 57px;
+	padding-bottom: 200px;
+}
+
+header a {
+	color: #ffffff;
+	font-family: 'Anton', sans-serif;
+
+}
+
+.menu {
+	display: flex;
+
+}
+
+.menu li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+
+}
+
+.menu li {
+	margin-right: 40px;
+}
+
+.tel {
+	font-size: 17px;
+	text-decoration: none;
+	margin-left: auto;
+	letter-spacing: 0.1em;
+}
+
+.nav{
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	margin-right: 69px;
+}
+
+.offer{
+	text-transform: uppercase;
+	margin-top: 216px;
+}
+.offer p {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+	font-family: 'Anton', sans-serif;
+	color: #fff;
+}
+
+.offer h1 {
+	font-size: 100px;
+	margin-bottom: 19px;
+	margin-top: -9px;
+	letter-spacing: 0.02em;
+	color: #fff;
+	font-family: 'Anton', sans-serif;
+}
+
+.btn{
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 17px 47px;
+	border: 1px solid #fff;
+	width: 238px;
+	text-decoration: none;
+	border-radius: 10px;
+	transition: all 0.5s ease;
+}
+.btn:hover {
+	color: #333;
+	background-color: #fff;
+}
+
+h2{
+	font-size: 50px;
+	margin-bottom: 58px;
+	font-family: 'Anton', sans-serif;
+}
+
+h3 {
+	font-family: 'Anton', sans-serif;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+p{
+	margin: 0;
+}
+section {
+	padding-top: 113px;
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+}
+
+.description p{
+	font-family: 'Open Sans';
+	font-weight: 400;
+	text-align: justify;
+	line-height: 1.62em;
+}
+.desc-right , .desc-left{
+	width: 567px;
+}
+
+
+.gallery {
+	margin-top: 67px;
+	display: flex;
+	justify-content: space-between;
+}
+.gallery img{
+	transition: all 1s ease;
+}
+
+.gallery img:hover{
+	cursor: pointer;
+  	transform: scale(1.1);
+}
+
+.footer-text{
+	font-size: 15px;
+	display: flex;
+	margin-top: 114px;
+	margin-bottom: 30px;
+	margin-left: 400px;
+}
+
+.footer-text p{
+	margin-right: 67px;
+}
