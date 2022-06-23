@@ -1,0 +1,172 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.logo{
+	width: 100px;
+	margin-right: 50px;
+}
+
+.header{
+	background: url(../img/header.png) no-repeat center top;
+	padding-top: 57px;
+	padding-bottom: 200px;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto; /*center*/
+
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.menu {
+	display: flex;
+}
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-family: 'Anton', sans-serif;
+	transition: all 1s ease;
+}
+
+.menu li a:hover{
+	color: red;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+.menu li{
+	margin-right: 50px;
+}
+
+.tel{
+	margin-left: auto;
+	color: #fff;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+
+.nav{
+	display: flex;
+	align-items: center;
+}
+
+.offer {
+	margin-top: 220px;
+	font-family: 'Anton', sans-serif;
+
+}
+
+.offer p{
+	font-size: 30px;
+	color: #fff;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.offer h1{
+	font-size: 70px;
+	color: #fff;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.btn{
+	display: block;
+	border: 1px solid #fff;
+	font-size: 17px;
+	padding: 20px 40px;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #fff;
+	width: 238px;
+	letter-spacing: 0.1em;
+	transition: all 0.7s ease;
+}
+.btn:hover {
+	color: #fff;
+	background: red;
+	border-color: red;
+}
+h2{
+	padding-top: 100px;
+	font-size: 50px;
+	padding-bottom: 50px;
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+}
+.description{
+	display: flex;
+	justify-content: space-between;
+}
+.description p{
+	font-family: 'Open Sans';
+	text-align: justify;
+	line-height: 1.62em;
+}
+
+.description h3{
+	padding-bottom: 30px;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: 'Anton', sans-serif;
+
+}
+
+.left-side, .right-side{
+	width: 567px;
+}
+
+.gallery{
+	margin-top: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery img{
+	transition: all 1s ease;
+}
+
+.gallery img:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.gallery img:nth-child(3){
+	width: 570px;
+	height: 344px;
+}
+
+.gallery img:nth-child(1){
+	width: 270px;
+	height: 344px;
+}
+.gallery img:nth-child(2){
+	width: 270px;
+	height: 344px;
+}
+
+.footer-text{
+	padding-top: 70px;
+	padding-bottom: 20px;
+	display: flex;
+	margin-left: 350px;
+}
+
+.footer-text p {
+	padding-right: 50px;
+}
+
+
