@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Vollkorn', serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: rgb(30, 229, 169);
+}
+.container{
+    width: 1110px;
+    margin: 0 auto;
+
+}
+.header{
+    padding-top: 70px;
+}
+.logo{
+    transition: all 1s ease;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+.mail{
+    margin-right: 20px;
+    transition: all 1s ease;
+}
+.mail:hover{
+    color: rgb(249, 237, 107);
+}
+.nav img{
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.offer{
+    letter-spacing: 0.03em;
+    line-height: 1.55em;
+    margin-bottom: 100px;
+    margin-top: 52px;
+}
+
+.place {
+    font-size: 18px;
+    margin-bottom: 21px;
+}
+
+.offer-title{
+    font-size: 45px;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-weight: 400;
+}
+
+.desc{
+    font-size: 18px;
+    margin-bottom: 21px;
+    margin-top: 21px;
+}
+
+.btn{
+    color: #000;
+    background: rgb(249, 237, 107);
+    font-size: 18px;
+    padding: 18px 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    transition: all 0.7s ease;
+}
+
+.btn:hover{
+    color: rgb(249, 237, 107);
+    background: #000;
+    box-shadow: -5px -5px 5px rgb(249, 237, 107);
+}
+
+.intro{
+    background: rgb(249, 237, 107);
+    padding: 30px;
+    width: 440px;
+    border-radius: 5px;
+}
+
+.intro-title{
+    font-weight: 700;
+    margin-bottom:  17px;
+}
+.dubai-img{
+    width: 350px;
+    margin-right: 20px;
+    transition: all 1s ease;
+}
+.dubai-img:hover{
+    box-shadow: -5px -5px 10px rgb(249, 237, 107);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+footer div{
+    display: flex;
+}
+
+footer div p{
+    margin-left: 400px;
+    
+}
