@@ -51,8 +51,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .intro-suptitle{
-	margin-bottom: 20px;
-	font-size: 72px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 70px;
 	color: #fff;
 	font-family:'Kaushan Script', cursive;
 ;
@@ -147,7 +148,7 @@ h1,h2,h3,h4,h5,h6{
 .intro-slider{
 	display: flex;
 	justify-content: space-between;
-	margin-top: 100px;
+	margin-top: 20px;
 }
 
 .slider-items{
