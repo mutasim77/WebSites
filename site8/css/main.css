@@ -1,0 +1,194 @@
+@import "reset.css";
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #E8DEC5;
+}
+
+.container{
+	max-width: 1300px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+.header{
+	padding: 60px 0px 52px 0px;
+}
+.header-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-list{
+	display: flex;
+}
+
+.nav-item{
+	margin-right: 40px;
+}
+
+.nav{
+	display: flex;
+	align-items: center;
+}
+.nav-item a{
+	text-transform: uppercase;
+	color: #5C5C52;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	transition: color 0.5s ease;
+}
+
+.nav-item a:hover{
+	color:  #C74138;
+}
+
+.btn{
+	padding: 13px 50px;
+	text-align: center;
+	align-items: center;
+	border: 1px solid #0A316F;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: uppercase;
+	columns: #02316F;
+	border-radius: 7px;
+	transition: color 0.7s ease;
+}
+.btn:hover{
+	color: #fff;
+	background-color: #02316F;
+}
+
+
+
+/*==========MAIN============*/
+
+.main{
+	margin-bottom: 50px;
+}
+
+.row{
+	padding-bottom: 86px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.information{
+	max-width: 743px;
+}
+	
+
+
+.subtitle{
+	color: #02316F;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 35px;
+	text-transform: uppercase;
+	padding-bottom: 77px;
+}
+
+.title{
+	font-family: 'Bebas Neue', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 125px;
+	line-height: 151px;
+	text-transform: uppercase;
+}
+
+.title span{
+	color: #C74138;
+	position: relative;
+}
+
+.title span::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 150px;
+	width: 190px;
+	background-image: url(../img/blood.svg);
+}
+
+
+.main-text{
+	max-width: 630px;
+	color: #7C7859;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 34px;
+	font-size: 19px;
+}
+
+
+.btn-main{
+	padding-top: 50px;
+}
+
+.main-btn{
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #C74138;
+	padding: 17px 50px;
+	border-radius: 7px;
+	font-size: 20px;
+	transition: all 0.7s ease;
+}
+
+.main-btn:hover{
+	color: #C74138;
+	background-color: #E8DEC5;
+	border: 1px solid #C74138;
+}
+
+.pic{
+	padding-top: 130px;
+}
+
+.pic img{
+	opacity: 0.8;
+}
+
+.text-footer{
+	padding: 0px 70px;	
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 40px;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* FOOTER */
+.footer-copyright{
+	text-align: center;
+}
+
+.footer-copyright span{
+	color: #C74138;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
