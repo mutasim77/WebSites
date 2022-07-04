@@ -1,0 +1,40 @@
+ /*PC*/
+@media(max-width:  1087px){
+	[class*="container"] {
+		max-width: 970px;
+	}
+}
+
+/*TABLET*/
+@media(max-width:  991.98px){
+	[class*="container"] {
+		max-width: 750px;
+	}
+
+	.header-button{
+		flex: 0 0 170px;
+	}
+
+	.menu-items{
+		margin-right: 30px;
+	}
+
+	.header-container{
+		min-height: 8px;
+
+	}
+	.healthcare{
+		padding: 30px 0px;
+	}
+	.healthcare-items{
+		flex-direction: column;
+	}
+
+}
+
+/*MOBILE*/
+@media(max-width:  967.98px){
+	[class*="container"] {
+		max-width: none;
+	}
+}
