@@ -1,0 +1,269 @@
+@import "reset.css";
+
+/*font-family: 'Bebas Neue', cursive;*/
+/*font-family: 'Noto Serif', serif;*/
+/*font-family: 'Trispace', sans-serif;*/
+
+body{
+	background: #140639;
+	font-family: 'Trispace', sans-serif;
+	text-transform: uppercase;
+}
+
+.container{
+	background: url("../img/main.png") center no-repeat;
+	background-size: cover;
+	max-width: 1250px;
+	padding: 0 50px;
+	margin: 0 auto;
+	border: 10px solid #402A7C;
+	border-radius: 7px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	height: 650px;
+	box-shadow: -10px -10px 15px #9F7FF3;
+	z-index: 10;
+
+}
+
+.container::before{
+	content: "";
+	position: absolute;
+	right: 20px;
+	bottom: 200px;
+	width: 150px;
+	height: 400px;
+	z-index: 0;
+	background: #785FBB;
+	filter: blur(145px);
+}
+
+.container::after{
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: 200px;
+	width: 150px;
+	height: 400px;
+	z-index: 0;
+	background: #785FBB;
+	filter: blur(150px);
+}
+
+.header-elements{
+	display: flex;
+	align-items: center;
+}
+
+.header-nav{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-list{
+	display: flex;
+}
+
+.nav-items{
+	padding-left: 75px;
+	position: relative;
+	transition: all 0.7s ease;
+}
+
+.nav-items a {
+	color: #fff;
+	font-size: 14px;
+}
+
+.nav-items:hover{
+	font-size: 15px;
+}
+
+.nav-items a:hover{
+	color: #9F7FF3;
+}
+
+.nav-items:last-child::before{
+	content: "";
+	display: block;
+	right: -250px;
+	bottom: 8px;
+	position: absolute;
+	width: 200px;
+	height: 1px;
+	background: #fff;
+}
+
+.header-acc img{
+	transition: all 0.7s ease;
+}
+
+.header-acc img:hover{
+	background: #000;
+
+	transform: scale(1.1);
+}
+
+
+/*==========ROW===========*/
+.row{
+	display: flex;
+	margin-top: 25px;
+	justify-content: space-between;
+}
+.information{
+
+}
+.title{
+	color: #fff;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 50px;
+	line-height: 50px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	text-shadow: 0px 4.89173px 34.2421px rgba(255, 255, 255, 0.33);
+}
+
+.title span{
+	color: #9F7FF3;
+	text-shadow: 0px 4.89173px 29.3504px rgba(218, 204, 255, 0.8);
+}
+
+.subtitle{
+	color: #fff;
+	font-size: 12px;
+	line-height: 16px;
+	max-width: 225px;
+	text-transform: initial;
+	margin: 25px 0px 25px 0px;
+}
+
+.row-button{
+	max-width: 350px;
+	display: flex;
+	align-items: center;
+}
+
+.btn{
+	margin-right: 40px;
+	color: #000;
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 8px;
+	background: linear-gradient(90deg, #00dbde, #fc00ff, #00dbde);
+	background-size: 300%;
+  	animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  to {
+    background-position: 400%;
+  }
+}
+
+.text{
+	color: #fff;
+	font-size: 12px;
+	text-transform: initial;
+}
+
+.text span{
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 0.1em;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.image-girl img{
+	margin-top: 2px;
+	margin-left: -40px;
+	transition: all 0.7s ease;
+}
+
+.image-girl img:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+.image img{
+	width: 740px;
+	filter: drop-shadow(9px 4.37027px 65.5541px #000000);
+}
+
+
+/* GLOW BORDER */
+
+.container::before{
+	content: "";
+	position: absolute;
+	left: 70px;
+	top: 150px;
+	background: linear-gradient(45deg, #4e03fc, #4e03fc, #6d0dde, #3903fc, #0b022e, #a80577, #d10a5d,#00dbde,#fc00ff);
+	background-size: 400%;
+	width: 1200px;
+	height: 100px;
+	z-index: -1;
+	animation: glow 20s linear infinite;
+}
+
+.container::after{
+ 	content: "";
+	position: absolute;
+	left: 85px;
+	top: 65px;
+	background: linear-gradient(45deg, #4e03fc, #4e03fc, #6d0dde, #3903fc, #0b022e, #a80577, #d10a5d,#00dbde,#fc00ff);
+	background-size: 400%;
+	width: 100px;
+	height: 600px;
+	z-index: -1;
+	animation: glow2 20s linear infinite;
+ }
+
+@keyframes glow{
+	0%{
+		background-position: 0 0;
+	}
+	50%{
+		background-position: 400% 0;
+	}
+	100%{
+		background-position: 0 0;
+	}
+}
+
+@keyframes glow2{
+	0%{
+		background-position: 0 0;
+	}
+	50%{
+		background-position: 400% 0;
+	}
+	100%{
+		background-position: 0 0;
+	}
+}
+.container::after{
+	filter: blur(30px);
+	opacity: 0.7;
+}
+
+/* =============== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
