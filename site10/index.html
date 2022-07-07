@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sturbucks</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="icon" href="img/logo.png">
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#!" >
+				<img src="img/logo.png" alt="LOGO" class="logo">
+				<ul>
+					<li><a href="#!">Home</a></li>
+					<li><a href="#!">Menu</a></li>
+					<li><a href="#!">What's New</a></li>
+					<li><a href="#!">Contact</a></li>
+				</ul>
+			</a>
+		</header>
+		<div class="content">
+			<div class="textBox">
+				<h2>It's not just a Coffee <br>It's <span>Starbucks</span></h2>
+				<p>
+					Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves headquartered in Seattle, Washington. It is the world's largest coffeehouse chain. As of November 2021, the company had 33,833 stores in 80 countries, 15,444 of which were located in the United States
+				</p>
+				<a href="#!">Learn More</a>
+			</div>
+			<div class="imageBox">
+				<img src="img/img1.png" alt="IMAGE" class="sturbucks">
+			</div>
+		</div>
+		<ul class="thumb">
+			<li>
+				<img src="img/thumb1.png" alt="thumb" onclick="imgSlider('img/img1.png'); 
+				changeColor('#017143')" >
+			</li>
+			<li>
+				<img src="img/thumb2.png" alt="thumb" onclick="imgSlider('img/img2.png'); 
+				changeColor('#eb7495')">
+			</li>
+			<li>
+				<img src="img/thumb3.png" alt="thumb" class="rotate" onclick="imgSlider('img/img3.png');
+				changeColor('#d752b1')">
+			</li>
+		</ul>
+		<ul class="sci">
+			<li>
+				<a href="#"><img src="img/facebook.png" alt="icon"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/instagram.png" alt="icon"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/twitter.png" alt="icon"></a>
+			</li>						
+		</ul>
+	</section>
+	<script type="text/javascript">
+		function imgSlider(anything){
+			document.querySelector('.sturbucks').src = anything;
+		}
+		function changeColor(color){
+			const circle = document.querySelector('.circle');
+			circle.style.background = color;
+		}
+	</script>
+</body>
+</html>
