@@ -1,9 +1,0 @@
-git status - for checking status
-
-git add index.html - for adding new changes 
-
-git commit -m "something" - committing messages
-
-git push - adding all changes on GitHub
-
-browser-sync start --server --directory --files "*"  -- for sync browser
