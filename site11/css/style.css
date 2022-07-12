@@ -1,0 +1,158 @@
+@import "reset.css";
+
+/* font-family: 'Caveat', cursive; */
+/* font-family: 'Rochester', cursive; */
+body {
+    background: url("../img/main.png") center no-repeat;
+    font-family: 'Caveat', cursive;
+    color: #fff;
+}
+
+/* head */
+.header {
+    margin-top: 25px;
+}
+
+.container {
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-name {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 85px;
+}
+
+.nav-items a {
+    color: #fff;
+    transition: color 0.7s ease;
+}
+
+.nav-items a:hover {
+    color: rgb(203, 56, 56);
+}
+
+.nav-items:not(:last-child) {
+    font-size: 22px;
+    padding-right: 33px;
+}
+
+.nav-items:last-child {
+    margin-top: 2px;
+}
+
+.nav-items a>p {
+    margin-left: 10px;
+}
+
+.nav-button {
+    background-color: #fff;
+    margin-top: 15px;
+    display: none;
+}
+
+.icon {
+    margin-top: 15px;
+    color: #fff;
+}
+
+.nav-font {
+    display: flex;
+    align-items: center;
+    font-family: 'Rochester', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    transition: color 0.7s ease;
+}
+
+.nav-font:hover {
+    color: rgb(141, 140, 140) !important;
+}
+
+.icon p {
+    margin-left: 10px;
+}
+
+/* info */
+.column {
+    margin-top: 220px;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 10px 10px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 52px;
+    margin-bottom: 30px;
+}
+
+.info {
+    max-width: 390px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    color: #fff;
+    font-size: 34px;
+    padding: 10px 21px;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 25px;
+
+}
+
+.btn:hover {
+    color: rgb(203, 56, 56);
+    border-color: rgb(203, 56, 56);
+    box-shadow: 0 0 10px rgb(203, 56, 56);
+}
+
+.btn:active {
+    color: rgb(213, 104, 104);
+    box-shadow: 0 0 5px rgb(213, 104, 104);
+}
+
+/* row images */
+
+.row-images {
+    margin-top: 105px;
+    display: flex;
+}
+
+.row-images img:not(:last-child) {
+    margin-right: 15px;
+}
+
+.row-images img {
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.row-images img:hover {
+    transform: scale(1.1);
+}
