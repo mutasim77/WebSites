@@ -1,0 +1,167 @@
+@import "reset.css";
+
+body {
+    font-family: Roboto, sans-serif;
+    color: #fff;
+    background: #010001;
+}
+
+.header {
+    margin-top: 50px;
+}
+
+.container {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+/* header nav  */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-items {
+    display: flex;
+}
+
+.list-items a {
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+}
+
+.list-items li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.list-items.gray a {
+    color: #808080;
+}
+
+/* header info */
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+    position: relative;
+}
+
+.header-text {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 25px;
+}
+
+.header-paragraph {
+    max-width: 268px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: lowercase;
+    margin-bottom: 32px;
+}
+
+.header-paragraph::after {
+    position: absolute;
+    content: '';
+    top: 18.5%;
+    left: 48%;
+    width: 59px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(90deg);
+}
+
+/* main  */
+.main {
+    margin-bottom: 170px;
+}
+
+.main-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-info {
+    margin-left: 45px;
+}
+
+.info-overview {
+    width: 500px;
+    margin-bottom: 220px;
+}
+
+.info-header {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    width: 187px;
+    line-height: 140%;
+    margin-bottom: 43px;
+}
+
+.main-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-list-items {
+    line-height: 179.69%;
+}
+
+.main-list-items span {
+    color: #808080;
+}
+
+.info-perfomance {}
+
+.perfomance-text {
+    width: 490px;
+    line-height: 1.8;
+}
+
+/* footer  */
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social {
+    margin-top: 43px;
+}
+
+.social-media a {
+    font-size: 18px;
+}
+
+.footer-text {
+    color: #808080;
+    margin: 30px 0;
+}
+
+.btn {
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 18px 70px;
+    font-size: 16px;
+    color: #fff;
+    transition: all .7s ease;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #010001;
+}
+
+.copyright {
+    margin-top: 130px;
+    font-size: 14px;
+    font-weight: 600;
+}
