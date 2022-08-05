@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "website-food-m"
+  },
+  "targets": {
+    "website-food-m": {
+      "hosting": {
+        "foodStation": [
+          "food-station"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

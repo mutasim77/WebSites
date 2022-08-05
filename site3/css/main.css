@@ -3,11 +3,12 @@
     margin: 0;
     font-family: 'Vollkorn', serif;
     box-sizing: border-box;
+}
 
-}
 body{
-    background: rgb(30, 229, 169);
+    background: rgb(30, 229, 167);
 }
+
 .container{
     width: 1110px;
     margin: 0 auto;
