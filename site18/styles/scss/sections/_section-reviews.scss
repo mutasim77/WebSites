@@ -1,0 +1,70 @@
+.section-reviews{
+    .main-header{
+        max-width: 100% ;
+    }
+
+    .review-card{
+        background: url('/img/1.png') no-repeat;
+        background-size:cover;
+        min-width: 580px;
+        min-height: 387px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 20px;
+        padding-left: 130px;
+        color: rgba(0, 0, 0, 0.5);
+        padding-top: 10px;
+        p{
+            max-width: 424px;
+            margin: 0 auto;
+        }
+        h3{
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .bottom{
+            max-width: 424px;
+        }
+
+        &:nth-child(2){
+            background: url('/img/2.png') no-repeat;
+            background-size:cover;
+            margin-left: 35px;
+
+        }
+
+
+    }
+
+    margin-bottom: 50px;
+
+}
+
+.reviews-parent{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+    cursor: pointer;
+    &::after{
+        position: absolute;
+        content: '';
+        width: 80%;
+        height: 1px;
+        background-color: #ccc;
+        bottom: 0;
+        left: 150px;
+    }
+    
+}
+.reviews-scroll{
+    display: flex;
+    width: calc(580px * 3);
+    overflow-x: auto !important;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}

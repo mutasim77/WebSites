@@ -1,0 +1,47 @@
+.footer{
+    margin: 50px 0;
+    color: #fff;
+    position: relative;
+    .d-flex{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tg-button{
+        border: 1px solid rgba(244, 244, 244, 0.5);
+        padding: 15px 35px;
+        border-radius: 20px;
+        transition: all .5s linear;
+        img{
+            width: 20px;
+        }
+
+        &:hover{
+            color: #000;
+            background-color: #ccc;
+        }
+    }
+
+    .copyright{
+        p{
+            &:not(:first-child){
+                margin-left: 50px;
+            }
+        }
+    }
+
+    &::after{
+        position: absolute;
+        content: '© 2022 ~ Mutasim';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ccc;
+        font-size: 1.3em;
+        bottom: -100px;
+        background-color: #000;
+        width: 100%;
+        height: 70px;
+    }
+
+}

@@ -1,0 +1,21 @@
+.section-portfolio{
+    display: flex;
+    overflow: hidden;
+}
+
+.portfolio-scroll{
+    display: flex;
+    width: calc(260px * 7);
+    // width: 100%;
+    overflow-x: auto !important;
+    img{
+        width: 260px;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+}

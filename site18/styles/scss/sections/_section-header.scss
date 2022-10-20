@@ -1,0 +1,105 @@
+.section-header{
+    background: url('/img/section-header.png') no-repeat;
+    background-size: cover;
+    height: 800px;
+    h1{
+        margin-top: 170px;
+        max-width: 560px;
+        font-size: 5.3em;
+        color: #fff;
+        font-family: 'Gilroy',Arial,sans-serif;
+        text-align: center;
+    }
+
+    img{
+        width: 1560px;
+    }
+}
+
+.mt-5{
+    margin-top: 20px;
+}
+
+.row-header{
+    display: flex;
+    justify-content: center;
+}
+
+.header-col2{
+    position: relative;
+    width: 50%;
+    .all-thumbs{
+        min-height: 500px;
+        position: relative;
+        .thumb{
+            width: 92px;
+            height: 71px;
+        }
+    
+        .thumb1{
+            position: absolute;
+            left: 0px;
+            bottom: 0;
+            animation: animate 3s linear infinite;
+        }
+    
+        .thumb2{
+            position: absolute;
+            right: 50px;
+            bottom: 30%;
+            animation: animate 5s ease-in infinite;
+        }
+    
+        .thumb3{
+            position: absolute;
+            left: 0px;
+            top: 70px;
+            animation: animate 4s ease-in-out infinite;
+        }
+    
+        .btn{
+            position: absolute;
+            right: 0;
+            top: 60px;
+            transform: rotate(30deg);
+            padding: 20px 70px 20px 30px;
+            background-color: #fff;
+            color: #000;
+    
+            &:hover{
+                transform: rotate(30deg);
+            }
+            &::after{
+                position: absolute;
+                content: url('https://static.tildacdn.com/tild6531-3561-4564-b834-333664313133/svg_7.svg');
+                width: 50px;
+                height: 50px;
+                right: 15px;
+                top: 9px;
+                border-radius: 50%;
+                color: #fff;
+                padding: 8px; 
+                transition: all .5s ease-in;
+            }
+    
+            &:hover{
+                &::after{
+                    transform: rotate(360deg);
+                }
+             }
+             a{
+                color: inherit;
+             }
+        }
+    
+        @keyframes animate {
+            0% , 100%{
+                transform: translateY(0em);
+            }
+            50%{
+                transform: translateY(2em);
+            }
+        }
+    }
+}
+

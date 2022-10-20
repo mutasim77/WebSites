@@ -1,0 +1,41 @@
+$fontColor :#9396a4;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent !important;
+    padding: 25px 10px;
+    border-bottom: .1px solid $fontColor;
+    .nav-link{
+        font-family: 'Gilroy';
+        color: $fontColor;
+        font-size: 1.3em;
+        letter-spacing: 1px;
+        transition: all 0.7s ease;
+        &:hover{
+            color: #fff;
+        }
+
+    }
+    .menu-hidden{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+
+    .navbar-nav{
+        display: flex;
+    }
+
+    .nav-item{
+        &:not(:last-child){
+            margin-right: 50px;
+        }
+    }
+
+    .navbar-toggler-icon {
+        background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        font-size: 1.3em;
+    }
+}
+

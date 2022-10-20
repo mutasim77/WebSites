@@ -1,0 +1,39 @@
+.section-price{
+    .my-card{
+        min-width: 360px;
+        text-align: center;
+        color: #fff;
+        border-radius: 15px;
+        padding: 50px 0px 20px;
+        background-color: #262e47;
+
+        h4{
+            font-size: 1.5em;
+        }
+
+        h1{
+            padding: 10px 0px;
+            font-size: 3em;
+        }
+        p{
+            text-align: center;
+            width: 220px;
+            opacity: 0.7;
+        }
+
+        .btn{
+            padding: 20px 70px 20px 40px;
+            margin-bottom: 30px;
+            margin-left: 0;
+        }
+
+        // &:nth-child(2), &:nth-child(1){
+        //     background-color: #262e47;
+        // }
+        // &:nth-child(3){
+        //     border: 1px solid rgba(255, 255 , 255, 0.2);
+        // }
+    }
+
+    
+}

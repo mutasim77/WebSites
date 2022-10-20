@@ -1,0 +1,91 @@
+.section-contact{
+    .row{
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    .btn{
+        padding: 20px 70px 20px 40px;
+    }
+    .col-1{
+        position: relative;
+        p{
+            max-width: 760px;
+            font-size: 1.2em;
+            color: #ccc;
+            margin-bottom: 50px;
+        }
+
+        .contacts{
+            a{
+                color: #fff;
+                font-size: 2.5em;
+            }
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .thumb3{
+            width: 257px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotate(13deg);
+        }
+
+        .thumb4{
+            width: 110px;
+            position: absolute;
+            bottom: 100px;
+            right: 0;
+            animation: animate 4s ease-in-out infinite;
+        }
+
+        &:last-child{
+            height: 390px;
+        }
+    }
+
+    .end{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(255, 128, 23);
+            border-radius: 200px 10px;
+            z-index: -1;
+            filter: blur(70px);
+            animation: animate2 5s ease-in-out infinite;
+        }
+    }
+
+    .col-1.end{
+        display: flex;
+        align-items: end;
+    }
+
+    border-bottom: 2px solid rgba(204, 204, 204, .5);
+    padding-bottom: 100px;
+
+    @keyframes animate {
+        0% , 100%{
+            transform: translateY(0em);
+        }
+        50%{
+            transform: translateY(2em);
+        }
+    }
+    @keyframes animate2 {
+        0% , 100%{
+            transform: scale(0.7);
+        }
+        50%{
+            transform: scale(1.1);
+        }
+    }
+
+}
