@@ -123,7 +123,7 @@
     right: 0;
   }
   .section-header {
-    background: url(/img/section-header.png) no-repeat !important;
+    background: url("img/section-header.jpg") no-repeat !important;
     background-size: 1000px !important;
     background-position: -460px 385px !important;
     height: auto !important;
@@ -455,7 +455,7 @@
 }
 
 .section-header {
-  background: url("/img/section-header.png") no-repeat;
+  background-image: url("img/section-header.jpg");
   background-size: cover;
   height: 800px;
 }
@@ -582,7 +582,7 @@
   max-width: 100%;
 }
 .section-reviews .review-card {
-  background: url("/img/1.png") no-repeat;
+  background: url("img/1.png") no-repeat;
   background-size: cover;
   min-width: 580px;
   min-height: 387px;
@@ -606,7 +606,7 @@
   max-width: 424px;
 }
 .section-reviews .review-card:nth-child(2) {
-  background: url("/img/2.png") no-repeat;
+  background: url("img/2.png") no-repeat;
   background-size: cover;
   margin-left: 35px;
 }
