@@ -1,0 +1,163 @@
+@import "../css/reset.css";
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-right: 3.5rem !important;
+}
+
+.nav-link:hover {
+  color: #FEF297 !important;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+
+nav {
+  margin-top: 40px;
+}
+
+.btn2 {
+  background-color: #FEF297;
+  color: #000;
+  padding: 7px 17px;
+  border-radius: 5px;
+  border: 1px solid #FEF297;
+}
+
+.btn2:hover {
+  background-color: transparent;
+  color: #FEF297;
+  border-color: #FEF297;
+}
+
+.btn2:focus, .btn2:active {
+  background-color: transparent;
+  color: #FEF297;
+}
+
+.navbar-toggler-icon {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  font-size: 1.5em;
+  border-radius: 7px;
+}
+
+@media (max-width: 700px) {
+  .navbar .d-flex {
+    display: block !important;
+  }
+}
+
+.footer {
+  color: #FEF297;
+  padding: 0 10px;
+}
+.footer ul > li {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.footer ul > li:first-child {
+  font-size: 1.5em;
+  opacity: 1;
+}
+.footer ul > li:not(:first-child):hover {
+  opacity: 1;
+}
+.footer ul:not(:last-child) {
+  margin-right: 100px;
+}
+@media (max-width: 700px) {
+  .footer ul {
+    padding: 0;
+    font-size: 0.7em;
+    margin-right: 15px !important;
+  }
+}
+@media (max-width: 700px) {
+  .footer ul li:first-child {
+    font-size: 1.2em;
+    margin-right: 20px !important;
+  }
+}
+
+* {
+  transition: all 0.5s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+}
+
+.home-section {
+  margin-top: 100px;
+}
+.home-section .head-text {
+  max-width: 450px;
+  font-family: "Vidaloka", serif;
+  color: #FEF297;
+  font-size: 2.7em;
+}
+@media (max-width: 767px) {
+  .home-section .head-text {
+    font-size: 2.3em;
+  }
+}
+.home-section .head-subtext {
+  color: #FEF297;
+  font-size: 1.1em;
+  margin: 1.5em 0;
+}
+@media (max-width: 767px) {
+  .home-section .head-subtext {
+    font-size: 1em;
+  }
+}
+
+.meet {
+  margin-top: 170px;
+  margin-bottom: 200px;
+}
+.meet .meet-header {
+  color: #FEF297;
+}
+.meet .cat-name {
+  color: #FEF297;
+  font-size: 1.5em;
+}
+.meet .cat-subname {
+  color: rgba(254, 242, 151, 0.6);
+}
+.meet .cat-image {
+  border: 2px solid #FEF297;
+  border-radius: 50%;
+}
+
+.sign-up {
+  width: 100%;
+  min-height: 240px;
+  background-color: #FEF297;
+  margin-bottom: 10%;
+}
+.sign-up p {
+  font-weight: 500;
+}
+.sign-up .btn2 {
+  background-color: #000;
+  color: #FEF297;
+}
+.sign-up .btn2:hover {
+  background-color: #FEF297;
+  border-color: #000;
+  color: #000;
+}
+.sign-up .input-group {
+  max-width: 500px;
+}/*# sourceMappingURL=style.css.map */

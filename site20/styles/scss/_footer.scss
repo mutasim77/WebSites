@@ -1,0 +1,37 @@
+.footer{
+    color: #FEF297;
+    padding: 0 10px;
+    ul > li {
+        cursor: pointer;
+        
+        &:first-child{
+            font-size: 1.5em;
+            opacity: 1;
+        }
+
+        &:not(:first-child):hover{
+            opacity: 1;
+        }
+        opacity: 0.5;
+    }
+
+    ul{
+        &:not(:last-child){
+            margin-right: 100px;
+        }
+        @media (max-width: 700px){
+            padding: 0;
+            font-size: .7em;
+            margin-right: 15px !important;
+        }
+
+        li{
+            &:first-child{
+                @media (max-width: 700px){
+                    font-size: 1.2em;
+                    margin-right: 20px !important;
+                }
+            }
+        }
+    }
+}

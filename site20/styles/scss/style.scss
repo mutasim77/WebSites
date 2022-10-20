@@ -1,0 +1,97 @@
+@import "../css/reset.css";
+@import "./header";
+@import "./footer";
+
+*{
+    transition: all .5s ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+}
+
+.home-section{
+    margin-top: 100px;
+
+    .head-text{
+        max-width: 450px;
+        font-family: 'Vidaloka', serif;
+        color: #FEF297;
+        font-size: 2.7em;
+
+        @media (max-width: 767px){
+            font-size: 2.3em;
+        }
+    }
+    
+    .head-subtext{
+        color: #FEF297;
+        font-size: 1.1em;
+        margin: 1.5em 0;
+    
+
+        @media (max-width: 767px){
+            font-size: 1em;
+        }
+    }
+}
+
+
+.meet{
+    margin-top: 170px;
+    margin-bottom: 200px;
+    .meet-header{
+        color: #FEF297;
+    }
+
+    .cat-name{
+        color: #FEF297;
+        font-size: 1.5em;
+    }
+
+    .cat-subname{
+        color: rgba(254, 242, 151, 0.6);
+    }
+    
+    .cat-image{
+        border: 2px solid #FEF297;
+        border-radius: 50%;
+    }
+}
+
+.sign-up{
+    width: 100%;
+    min-height: 240px;
+    background-color: #FEF297;
+    margin-bottom: 10%;
+
+    p{
+        font-weight: 500;
+    }
+
+    .btn2{
+        background-color: #000;
+        color: #FEF297;
+
+        &:hover{
+            background-color: #FEF297;
+            border-color: #000;
+            color: #000;
+        }
+    }
+
+    .input-group{
+        max-width: 500px;
+    }
+}
+
+
+
+
+
+

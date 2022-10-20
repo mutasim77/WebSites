@@ -1,0 +1,207 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,101,1) 34%, rgba(93,56,119,1) 63%, rgba(0,212,255,1) 100%);
+  background: url('../img/background.png') no-repeat;
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+.main-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 150px;
+  border: 1px solid #000;
+}
+
+.header{
+  height: 131px;
+  padding: 10px;
+  border-bottom: 10px solid #CE1124;
+}
+
+.nav-pic{
+  width: 728px;
+  height: 90px;
+  /* background: url('../img/pic.jpg') no-repeat; */
+  /* background-position-y: -175px; */
+  /* background-size: cover; */
+}
+
+.main{
+  display: flex;
+}
+
+.leftbar{
+  border-right: 10px solid #CE1124;
+}
+
+.nav-items{
+  position: relative;
+}
+
+.nav-logo img{
+  position: absolute;
+  left: 60px;
+}
+
+
+.list-items{
+  text-transform: capitalize;
+  list-style-type: square;
+  font-size: 0.8em;
+}
+
+ul{
+  position: relative;
+}
+
+ul > li{
+  cursor: pointer;
+}
+ul > li:hover{
+  background-color: #e8e8e8;
+}
+
+ul > .list-items:first-child{
+  width: 100%;
+  background-color: #e4e4e4;
+  color: #CE1124;
+}
+ul > .list-items:first-child span{
+  color: #000;
+}
+
+.block{
+  max-width: 630px;
+  height: 267px;
+  border: 1px solid #000;
+  margin-top: 30px;
+}
+
+.block h3{
+  background-color: #e4e4e4;
+  font-size: 1.3em;
+  margin-left: 15px;
+}
+
+.content{
+  display: flex;
+  padding: 0 20px;
+}
+
+.info{
+  background-color: #e4e4e4;
+  padding: 0 20px !important;
+}
+
+
+.block-news{
+  border: none;
+  border-bottom: 1px dotted #000;
+}
+
+.block-news h3, .block-news .info{
+  background-color: transparent;
+}
+
+.other-news{
+  width: 85%;
+  background-color: #e4e4e4;
+}
+
+.rightbar{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding-right: 30px;
+}
+.reklama{
+  width: 100%;
+  height: 291px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.login, .golos, .live{
+  border: 1px solid #000;
+}
+
+.inputs{
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+.inputs input{
+  width: 100px;
+  height: 23px;
+}
+
+.login .btn, .golos .btn{
+  padding: 4px 30px;
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+.login h2, .golos h2, .live h2{
+  padding: 5px 0;
+  font-size: 1.3em;
+  background-color: #e4e4e4;
+}
+
+.forget{
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+.forget a, .golos a{
+  text-decoration: none;
+  color: #000;
+}
+.golos p{
+  font-size: 0.8em;
+  font-weight: 700;
+}
+.golos > div{
+  padding: 10px;
+}
+
+.golos a{
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+.albeni-reklama{
+  border: 1px solid #000;
+}
+
+.live ul li{
+  list-style: none;
+  margin-left: -20px;
+  font-size: 0.8em;
+}
+
+.live ul li span{
+  font-weight: 700;
+}
+
+.footer{
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .8em;
+  padding: 0 40px;
+}
+
+.footer ul{
+  display: flex;
+   margin-top: 10px;
+}
+
+.footer ul li{
+  list-style: none;
+  margin-left: 15px;
+}
