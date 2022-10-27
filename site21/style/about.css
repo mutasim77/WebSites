@@ -1,0 +1,24 @@
+.section-about-us .container img{
+    width: 100%;
+    border-radius: 15px;
+    margin: 40px 0;
+}
+
+.section-about-us p{
+    color: #000;
+    opacity: 0.8;
+    line-height: 2;
+}
+
+.section-about-us p span{
+    color: #082673;
+    font-weight: 700;
+}
+.section-about-us .row img{
+width: 30%;
+}
+
+.section-about-us{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
