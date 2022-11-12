@@ -13,7 +13,7 @@ section{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #fff;
+	/* background: #fff; */
 }
 
 header{
@@ -50,6 +50,10 @@ header ul li a:hover{
 	color: #017143;
 }
 
+.list.dark{
+	color: #fff;
+}
+
 .content{
 	position: relative;
 	width: 100%;
@@ -68,6 +72,12 @@ header ul li a:hover{
 	font-size: 3.8em;
 	line-height: 1.4em;
 	font-weight: 500;
+}
+
+/* dark  */
+.content .textBox h2.dark, 
+.content .textBox p.dark {
+	color: #fff;
 }
 
 .content .textBox h2 span{
@@ -103,17 +113,17 @@ header ul li a:hover{
 	display: flex;
 	justify-content: flex-end;
 	padding-right: 50px;
-	margin-top: 50px;
+	margin-top: 40px;
 }
 
 .content .imageBox img{
-	max-width: 340px;
+	max-width: 500px;
 }
 
 .thumb{
 	position: absolute;
 	left: 50%;
-	bottom: 20px;
+	bottom: 60px;
 	transform: translate(-50%);
 	display: flex;
 }
@@ -126,7 +136,7 @@ header ul li a:hover{
 }
 
 .rotate{
-	transform: rotate(-15deg);
+	transform: rotate(-10deg);
 }
 
 .thumb li:hover{
@@ -165,6 +175,51 @@ header ul li a:hover{
 	background: #017143;
 	clip-path: circle(600px at right 800px);
 }
+
+
+/* footer  */
+.footer{
+	background-color: #017143;
+	padding: 10px 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+/* Fade Down */
+#textBox{
+	top: -100px;
+	opacity: 0;
+}
+
+/* Fade Right */
+#imgFade{
+	position: relative;
+	right: -100px;
+	opacity: 0;
+}
+
+/* hover  */
+.list{
+	font-size: 1.5em;
+}
+
+/* Pic Animation */
+.sturbucks{
+	animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+	0%, 100%{
+		transform: translateY(0em);
+	}
+	50%{
+		transform: translateY(3em);
+	}
+}
+
 
 
 

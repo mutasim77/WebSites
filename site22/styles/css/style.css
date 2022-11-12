@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0000ff;
+  font-family: "Poppins", sans-serif !important;
+  animation: rainbow-background 7s linear infinite;
+  overflow: hidden;
+}
+@keyframes rainbow-background {
+  0%, 100% {
+    background: #65dfc9;
+  }
+  50% {
+    background-color: #ff6d5f;
+  }
+}
+
+.container {
+  max-width: 60% !important;
+  margin: 4.5%;
+}
+
+.glass {
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  position: relative;
+}
+.glass .left-side {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 50px;
+  border-radius: 20px 0 0 20px;
+}
+.glass .left-side .info img {
+  max-width: 80px;
+  border-radius: 50%;
+}
+.glass .left-side .info h3 {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0.3em 0;
+}
+.glass .left-side .info p {
+  font-size: 0.7em;
+  margin: 0;
+}
+.glass .left-side .list-items {
+  margin-bottom: 50px;
+}
+.glass .left-side .list-items > ul > li {
+  list-style: none;
+  margin-top: 20px;
+  padding: 5px 8px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.glass .left-side .list-items > ul > li.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.glass .left-side .list-items > ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.glass .left-side .list-items > ul > li > a {
+  text-decoration: none;
+  color: rgba(29, 112, 201, 0.7);
+}
+.glass .left-side .list-items > ul > li > a > img {
+  margin-right: 15px;
+}
+.glass .left-side .join-pro {
+  background: linear-gradient(to right, #65dfc9, #2e97ed);
+  padding: 10px 15px;
+  border-radius: 30px;
+  max-width: 187px;
+}
+.glass .left-side .join-pro p {
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+}
+.glass .left-side .join-pro img {
+  max-width: 100px;
+  animation: toTop 5s linear infinite;
+}
+@keyframes toTop {
+  0%, 100% {
+    transform: translateY(-2em) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0em) rotate(45deg);
+  }
+}
+.glass .right-side {
+  padding: 50px;
+  padding-bottom: 0;
+}
+.glass .right-side .top h1 {
+  color: #0d154a;
+  font-weight: 700;
+  opacity: 0.7;
+  position: relative;
+  background-image: linear-gradient(to right, #6feefa, #5a899e, #47cec5, #004480, #58fee8, #4d97ff, #c97e74, #ca7ef3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbow 200s linear infinite;
+}
+@keyframes rainbow {
+  to {
+    background-position: 4500vh;
+  }
+}
+.glass .right-side .main {
+  margin-top: 50px;
+  position: relative;
+}
+.glass .right-side .main.hide {
+  display: none !important;
+}
+.glass .right-side .main.upcoming .row {
+  justify-content: center;
+}
+.glass .right-side .main.upcoming .card {
+  max-width: 100px;
+  padding: 10px 10px;
+}
+.glass .right-side .main.upcoming .card img {
+  border-radius: 10px;
+}
+.glass .right-side .main.upcoming .card p {
+  font-size: 0.6em;
+  margin: 10px 0 0 0;
+}
+.glass .right-side .main.upcoming.library .card {
+  max-width: 100px;
+  padding: 0;
+}
+.glass .right-side .main.upcoming.library .card img {
+  width: 100%;
+  max-width: 100px;
+  height: 140px;
+}
+.glass .right-side .main.upcoming.library .row > div {
+  display: flex;
+}
+.glass .right-side .main.upcoming.library h3 {
+  margin: 0;
+  animation: color-change 3s linear infinite;
+}
+@keyframes color-change {
+  0%, 100% {
+    color: #ff2f00;
+  }
+  50% {
+    color: #12eed8;
+  }
+  70% {
+    color: #ec47d8;
+  }
+}
+.glass .right-side .card {
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.glass .right-side .card img {
+  max-width: 100px;
+}
+.glass .right-side .card .percentage {
+  color: #37debf;
+  font-weight: 700;
+}
+.glass .right-side .card .game-name {
+  color: #0d154a;
+}
+.glass .right-side .card .game-version {
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+.glass .right-side .card:nth-child(2) .progress-bar {
+  width: 20%;
+}
+.glass .right-side .card:nth-child(3) .progress-bar {
+  width: 90%;
+}
+.glass .right-side .progress .progress-bar {
+  background: linear-gradient(to right, #95e4ff, #37debf);
+  width: 60%;
+}
+.glass::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(3px);
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  border-radius: 50%;
+  top: -10px;
+  right: -200px;
+  animation: scal 7s linear infinite;
+}
+.glass::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(3px);
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  border-radius: 50%;
+  bottom: -10px;
+  left: -200px;
+  animation: translat 5s linear infinite;
+  border-bottom: 2px solid #ff0000;
+}
+@keyframes translat {
+  0%, 100% {
+    transform: translateY(-23em) rotate(360deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+@keyframes scal {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+  .container {
+    max-width: 80% !important;
+    margin-bottom: 5%;
+  }
+  .glass .right-side .main.upcoming .row {
+    margin-bottom: 40px;
+  }
+  .glass::after, .glass::before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 90% !important;
+  }
+  .glass .right-side .main.upcoming.library .row > div {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .glass .right-side .card.gap-5 {
+    gap: 0 !important;
+  }
+  .glass .right-side .card .game-name {
+    font-size: 0.7em;
+  }
+  .glass .right-side .card .game-version {
+    font-size: 0.5em;
+  }
+  .glass .right-side .card .percentage {
+    font-size: 0.9em !important;
+  }
+  .game-info {
+    margin-left: 28px;
+  }
+  .glass .right-side {
+    padding-bottom: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
