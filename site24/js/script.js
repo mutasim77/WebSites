@@ -108,16 +108,28 @@ window.addEventListener('DOMContentLoaded', () => {
         modalTrigger = document.querySelectorAll('[data-modal]'),
         modalCloseBtn = document.querySelector('[data-close]');
 
+    //? open modal using btns
     modalTrigger.forEach(item => {
         item.addEventListener('click', () => {
             modal.classList.add('show');
             modal.classList.remove('hide');
+            document.body.style.overflow = 'hidden';
         });
     })
 
+    //? Close modal using close button
     modalCloseBtn.addEventListener('click', () => {
         modal.classList.add('hide');
         modal.classList.remove('show');
+        document.body.style.overflow = '';
     })
+
+    //? Close modal when clicked out of modal window
+    modal.addEventListener('click', (event) => {
+        if (event.target.classList[0] == 'modal') {
+            modal.classList.add('hide');
+            modal.classList.remove('show');
+        }
+    });
 
 });
