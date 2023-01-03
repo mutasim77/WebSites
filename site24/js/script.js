@@ -185,7 +185,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
         render() {
             const element = document.createElement('div');
-            this.classes.forEach(className => element.classList.add(className));
+            if (this.classes.length === 0) {
+                this.element = 'menu__item';
+                element.classList.add(this.element);
+            } else {
+                this.classes.forEach(className => element.classList.add(className));
+            }
             element.innerHTML =
                 `
                 <img src="${this.src}" alt="${this.alt}">
@@ -223,8 +228,7 @@ window.addEventListener('DOMContentLoaded', () => {
         и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода
         в ресторан!`,
         14,
-        '.menu .container',
-        'menu__item'
+        '.menu .container'
     ).render();
 
     new MenuCard(
