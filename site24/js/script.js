@@ -150,14 +150,17 @@ window.addEventListener('DOMContentLoaded', () => {
     //? Open modal window using setTImeout;
     const modalTimerId = setTimeout(openModal, 5000);
 
-    //? Open modal when user scrolls to the end of the page;
-    window.addEventListener('scroll', () => {
+    //* Function for opening modal by scrolling;
+    function openModalByScroll() {
         // window.pageYoffset => it's the same scrollY
         // document.documentElement ==> All element from our document
         // clientHeight ==> height from our content including paddings
         // scrollHeight ==> height of an element's content including content not visible on the screen due to overflow
         if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
             openModal();
+            window.removeEventListener('scroll', openModalByScroll);
         }
-    });
+    }
+    //? Open modal when user scrolls to the end of the page;
+    window.addEventListener('scroll', openModalByScroll);
 });
