@@ -108,14 +108,27 @@ window.addEventListener('DOMContentLoaded', () => {
         modalTrigger = document.querySelectorAll('[data-modal]'),
         modalCloseBtn = document.querySelector('[data-close]');
 
+    //* Function that open modal
+    function openModal() {
+        modal.classList.add('show');
+        modal.classList.remove('hide');
+        document.body.style.overflow = 'hidden';
+        clearInterval(modalTimerId);
+    }
+
     //? open modal using btns
     modalTrigger.forEach(item => {
         item.addEventListener('click', () => {
-            modal.classList.add('show');
-            modal.classList.remove('hide');
-            document.body.style.overflow = 'hidden';
+            openModal();
         });
     })
+
+    //* Function that close modal
+    function closeModal() {
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+    }
 
     //? Close modal using close button
     modalCloseBtn.addEventListener('click', closeModal)
@@ -134,11 +147,17 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    //* Function that close modal
-    function closeModal() {
-        modal.classList.add('hide');
-        modal.classList.remove('show');
-        document.body.style.overflow = '';
-    }
+    //? Open modal window using setTImeout;
+    const modalTimerId = setTimeout(openModal, 5000);
 
+    //? Open modal when user scrolls to the end of the page;
+    window.addEventListener('scroll', () => {
+        // window.pageYoffset => it's the same scrollY
+        // document.documentElement ==> All element from our document
+        // clientHeight ==> height from our content including paddings
+        // scrollHeight ==> height of an element's content including content not visible on the screen due to overflow
+        if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight - 1) {
+            openModal();
+        }
+    });
 });
