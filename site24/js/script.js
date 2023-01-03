@@ -129,6 +129,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (event.target.classList[0] == 'modal') {
             modal.classList.add('hide');
             modal.classList.remove('show');
+            document.body.style.overflow = '';
         }
     });
 
