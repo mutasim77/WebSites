@@ -118,19 +118,27 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     //? Close modal using close button
-    modalCloseBtn.addEventListener('click', () => {
-        modal.classList.add('hide');
-        modal.classList.remove('show');
-        document.body.style.overflow = '';
-    })
+    modalCloseBtn.addEventListener('click', closeModal)
 
     //? Close modal when clicked out of modal window
     modal.addEventListener('click', (event) => {
-        if (event.target.classList[0] == 'modal') {
-            modal.classList.add('hide');
-            modal.classList.remove('show');
-            document.body.style.overflow = '';
+        if (event.target == modal) {
+            closeModal();
         }
     });
+
+    //? Close modal when esc button was clicked;
+    document.addEventListener('keydown', (event) => {
+        if (event.code = 'escape' && modal.classList.contains('show')) {
+            closeModal();
+        }
+    })
+
+    //* Function that close modal
+    function closeModal() {
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+    }
 
 });
