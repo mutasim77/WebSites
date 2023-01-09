@@ -10,7 +10,8 @@ I created this repository on my summer holiday🌇, which means I started learni
 
 ### Take a look at the screenshots below to see some of my projects🖼
 
-<center align="center">
+<h1 align="center">
+ 
 - 1
 <img width="1000" alt="Screen Shot 2023-01-09 at 3 24 53 PM" src="https://user-images.githubusercontent.com/96326525/211278045-adefa941-0ecc-4246-86dd-2dca2af8fe23.png">
 
@@ -26,4 +27,4 @@ I created this repository on my summer holiday🌇, which means I started learni
 - 5
 <img width="700" alt="Screen Shot 2023-01-09 at 3 27 20 PM" src="https://user-images.githubusercontent.com/96326525/211278584-c4a82a9d-4372-438b-b7c5-1a138a09a820.png">
 
- </center>
+ </h1>
