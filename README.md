@@ -12,19 +12,19 @@ I created this repository on my summer holiday🌇, which means I started learni
 
 <h1 align="center">
  
-- 1
-<img width="1000" alt="Screen Shot 2023-01-09 at 3 24 53 PM" src="https://user-images.githubusercontent.com/96326525/211278045-adefa941-0ecc-4246-86dd-2dca2af8fe23.png">
+1
+<img width="800" alt="Screen Shot 2023-01-09 at 3 24 53 PM" src="https://user-images.githubusercontent.com/96326525/211278045-adefa941-0ecc-4246-86dd-2dca2af8fe23.png">
 
-- 2
-<img width="1000" alt="Screen Shot 2023-01-09 at 3 28 21 PM" src="https://user-images.githubusercontent.com/96326525/211278099-2c21ad5c-cb52-408a-a968-163c15783a6e.png">
+2
+<img width="800" alt="Screen Shot 2023-01-09 at 3 28 21 PM" src="https://user-images.githubusercontent.com/96326525/211278099-2c21ad5c-cb52-408a-a968-163c15783a6e.png">
 
-- 3
-<img width="900" alt="Screen Shot 2023-01-09 at 3 31 50 PM" src="https://user-images.githubusercontent.com/96326525/211278462-6c72fb2a-dd0f-4ff8-be96-971ef154cf95.png">
+3
+<img width="800" alt="Screen Shot 2023-01-09 at 3 31 50 PM" src="https://user-images.githubusercontent.com/96326525/211278462-6c72fb2a-dd0f-4ff8-be96-971ef154cf95.png">
 
-- 4
+4
 <img width="800" alt="Screen Shot 2023-01-09 at 3 32 39 PM" src="https://user-images.githubusercontent.com/96326525/211278520-6b77c374-c807-442e-bd22-d830c8b4a87b.png">
 
-- 5
-<img width="700" alt="Screen Shot 2023-01-09 at 3 27 20 PM" src="https://user-images.githubusercontent.com/96326525/211278584-c4a82a9d-4372-438b-b7c5-1a138a09a820.png">
+5
+<img width="800" alt="Screen Shot 2023-01-09 at 3 27 20 PM" src="https://user-images.githubusercontent.com/96326525/211278584-c4a82a9d-4372-438b-b7c5-1a138a09a820.png">
 
  </h1>
