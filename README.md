@@ -12,7 +12,7 @@ I created this repository on my summer holiday🌇, which means I started learni
 
 <h1 align="center">
  
--1
+- 1
 <img width="800" alt="Screen Shot 2023-01-09 at 3 24 53 PM" src="https://user-images.githubusercontent.com/96326525/211278045-adefa941-0ecc-4246-86dd-2dca2af8fe23.png">
 
 2
